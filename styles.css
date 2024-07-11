@@ -25,6 +25,7 @@ html, body, h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: bottom;
+    background-position-x: center;
     color: #004978;
     position: relative;
 }
@@ -230,5 +231,40 @@ footer {
     text-align: right;
 }
 .links {
-    
+    color: #0076B9;
+    padding: 10px 40px;
+    line-height: 1.4;
+}
+.links a {
+    font-size: 12px;
+    font-weight: 300;
+}
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+.links img {
+    width: 136px;
+    margin-top: -7px;
+}
+.links-sections {
+    display: flex;
+    flex-direction: row;
+}
+.links-sections > li {
+    padding: 0 30px;
+    position: relative;
+}
+.links-sections > li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 1px;
+    height: 15px;
+    background-color: #0076B9;
+}
+.links-sections li h2 {
+    font-size: 14px;
+    font-weight: 400;
 }
